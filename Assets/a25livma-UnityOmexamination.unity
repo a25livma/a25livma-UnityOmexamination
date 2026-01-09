@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15887015}
   - component: {fileID: 15887016}
+  - component: {fileID: 15887017}
   m_Layer: 5
   m_Name: AudioSlider
   m_TagString: Untagged
@@ -208,7 +209,36 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 15887017}
+        m_TargetAssemblyTypeName: AudioSlider, Assembly-CSharp
+        m_MethodName: SetLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &15887017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15887014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0721ddf514c50e46a74df67dd953870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: d569f07d3f0978d44b83217db2049bd6, type: 2}
+  audioMixerParameter: AudioParameter
+  slider: {fileID: 15887016}
+  sliderValueText: {fileID: 2069387763}
+  valueScaleType: 0
 --- !u!1 &229310506
 GameObject:
   m_ObjectHideFlags: 0
